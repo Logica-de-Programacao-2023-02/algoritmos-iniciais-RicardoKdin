@@ -1,0 +1,81 @@
+Algoritmo de soma de dois números: um algoritmo simples que pede dois números como entrada e retorna a soma desses dois números.
+
+1: leia A
+2: leia B
+3: resultado = A + B
+4: escreva resultado
+
+Algoritmo de conversão de temperatura: um algoritmo que converte uma temperatura em Celsius para Fahrenheit ou vice-versa.
+
+1: leia temperatura
+2: leia unidade
+3: se unidade = C
+4: então resultado = (temperatura * 1.8) + 32
+5: senão
+6: então resultado = (temperatura - 32) / 1.8
+7: escreva resultado
+
+Algoritmo de cálculo de média: um algoritmo que calcula a média de uma lista de números.
+
+1: leia lista de números
+1.1 : leia quantidade
+2: var soma = 0
+3: para cada número da lista faça:
+3.1: soma = soma + número
+4: média = soma / quantidade
+5: escreva média
+
+Algoritmo de cálculo de fatorial: um algoritmo que calcula o fatorial de um número, ou seja, o produto de todos os números inteiros de 1 até aquele número.
+
+1: leia número
+2: faça variável fatorial = 1; fatorial <= número; fatorial = fatorial++
+3: para o número da lista faça: resultado = resultado * fatorial 
+4: escreva resultado
+
+Algoritmo de busca linear: um algoritmo que procura por um determinado elemento em uma lista, verificando cada elemento da lista até encontrá-lo.
+
+1: leia lista
+2: leia elemento x
+3: para cada elemento encontrado na lista faça:
+3.1: se o elemento encontrado na lista for = ao elemento x
+3.2: então  escreva resultado = encontrado
+3.3: senão selecionar outro elemento da lista
+4: se o elemento não for encontrado escreva resultado = não encontrado
+
+Algoritmo de cálculo de potência: um algoritmo que calcula a potência de um número, elevando-o a uma determinada potência.
+
+1: leia número
+2: leia potência y
+3: para o número faça:
+4: resultado = número ^ potência y
+5: escreva resultado
+
+Algoritmo de verificação de número primo: um algoritmo que verifica se um número é primo, ou seja, se é divisível apenas por 1 e por ele mesmo.
+
+1: leia x
+2: Se número / 2 até x - 1 % 0 escreva Número não é primo
+3: Senão escreva Número é primo
+
+Algoritmo de cálculo de área de um triângulo: um algoritmo que calcula a área de um triângulo com base na base e altura fornecidas.
+
+1: leia Base
+2: leia Altura
+3: faça resultado = (Base * Altura) / 2
+4: escreva resultado
+
+Algoritmo de cálculo de juros compostos: um algoritmo que calcula o montante de dinheiro após um período de tempo com juros compostos.
+
+1: leia Capital
+2: leia Taxa
+3: leia Tempo
+4: Capita = C; Taxa = I; Tempo = T
+5: faça Resultado = C * (1 + I)^T
+6: escreva resultado
+
+Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
+
+1: leia elementos da lista
+2: leia pesos
+3: para cada número da lista faça:
+3.1: resultado = (elemento x * peso x + elemento y * peso y) / (peso x + peso y)
+4: escreva resultado
