@@ -27,10 +27,10 @@ Algoritmo de cálculo de média: um algoritmo que calcula a média de uma lista 
 
 Algoritmo de cálculo de fatorial: um algoritmo que calcula o fatorial de um número, ou seja, o produto de todos os números inteiros de 1 até aquele número.
 
-1: leia número
-2: faça variável fatorial = 1; fatorial <= número; fatorial = fatorial++
-3: para o número da lista faça: resultado = resultado * fatorial 
-4: escreva resultado
+1: leia x
+2: para cada número entre 1 e x faça:
+3: x = x * número
+4: escreva x
 
 Algoritmo de busca linear: um algoritmo que procura por um determinado elemento em uma lista, verificando cada elemento da lista até encontrá-lo.
 
@@ -39,22 +39,27 @@ Algoritmo de busca linear: um algoritmo que procura por um determinado elemento 
 3: para cada elemento encontrado na lista faça:
 3.1: se o elemento encontrado na lista for = ao elemento x
 3.2: então  escreva resultado = encontrado
-3.3: senão selecionar outro elemento da lista
-4: se o elemento não for encontrado escreva resultado = não encontrado
+3.3: fim
+3.4: escreva resultado = não encontrado
+4: fim
 
 Algoritmo de cálculo de potência: um algoritmo que calcula a potência de um número, elevando-o a uma determinada potência.
 
 1: leia número
 2: leia potência y
-3: para o número faça:
-4: resultado = número ^ potência y
+3: para cada número entre 1 e potência y faça:
+4: resultado = número * número
 5: escreva resultado
 
 Algoritmo de verificação de número primo: um algoritmo que verifica se um número é primo, ou seja, se é divisível apenas por 1 e por ele mesmo.
 
 1: leia x
-2: Se número / 2 até x - 1 % 0 escreva Número não é primo
-3: Senão escreva Número é primo
+2: para cada número entre 2 e x-1 faça:
+3: se o resto da divisão entre x e número for 0 então:
+4: escreva x não é primo
+5: fim
+6: escreva x é primo
+7: fim
 
 Algoritmo de cálculo de área de um triângulo: um algoritmo que calcula a área de um triângulo com base na base e altura fornecidas.
 
@@ -74,8 +79,13 @@ Algoritmo de cálculo de juros compostos: um algoritmo que calcula o montante de
 
 Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
 
-1: leia elementos da lista
-2: leia pesos
-3: para cada número da lista faça:
-3.1: resultado = (elemento x * peso x + elemento y * peso y) / (peso x + peso y)
-4: escreva resultado
+1: leia lista_elementos
+2: leia lista_pesos
+3: var soma = 0
+4: para cada número da lista_elementos faça:
+4.1: soma = soma + ( número * peso_respectivo)
+5: var soma_peso = 0
+6: para cada número da lista_peso faça:
+6.1: soma_peso = soma_peso + número
+7: média = soma / soma_peso
+8: escreva média
